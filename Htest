@@ -1,0 +1,19 @@
+import discord
+from discord.ext import commands
+import asyncio
+from datetime import date
+import random
+from discord import channel, Guild
+import json
+
+bot = commands.Bot(command_prefix='_')
+bot.remove_command("help")
+
+@bot.event
+async def on_ready():
+	await bot.change_presence(status=discord.Status.online, activity=discord.Game('Beta'))
+print('The Bot is ready!')
+print('bot.user.name')
+print('Discord.Lounge')
+
+bot.run('NjU2NTE3MjE2NTY4NjA2NzMx.XoXSFA.hr75npgm5cyCr7itH99GgFDlhws')
